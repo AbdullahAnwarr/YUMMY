@@ -357,3 +357,24 @@ $('ul li').eq(0).click(async function (e) {
 $('ul li').eq(5).click(async function (e) { 
     location.href='login/index.html'
 })
+
+// 
+$('nav').animate({ 'left': `-${outerWidth}px` }, 500)
+$('nav span').click(function () {
+  if ($('nav').css('left')=='0px') {
+    $('nav').animate({ 'left': `-${outerWidth}px`},500)
+    $('nav span i').css('transform', 'rotate(0)')
+} else {
+    
+    $('nav span i').css('transform', 'rotate(180deg)')
+    $('nav').animate({ 'left': '0px'},500)
+  }
+  
+})
+$('section,footer,.fa-close,nav li').click(() => {
+  
+    $('nav').animate({ 'left': `-${outerWidth}px` }, 500)
+    $('nav span i').css('transform', 'rotate(0)')
+    
+})
+// 
