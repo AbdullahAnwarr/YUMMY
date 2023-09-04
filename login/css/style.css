@@ -1,0 +1,33 @@
+body{
+    color:  #218bb8a3 ;
+}
+a{
+    text-decoration: none;
+}
+div{
+    padding: .25rem;
+    margin: 0rem auto;
+    width: 80%;
+
+}
+h2{
+    margin: 0rem 1.25rem;
+}
+h1{
+    text-align: center;
+    color: #218bb8a3;
+}
+nav{
+    height: 90px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+#useremail + p ,#username + p,#userpassword + p{
+    color: red;
+    display: none;
+} 
+#addBtn{
+    display: none;
+}
