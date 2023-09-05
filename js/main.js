@@ -378,3 +378,25 @@ $('section,footer,.fa-close,nav li').click(() => {
     
 })
 // 
+$('nav li').click(e => {
+  $(e.target).addClass('text-white')
+  $('nav li').not(e.target).removeClass('text-white')
+  let sectionText = $(e.target).text().toLowerCase()
+  let sectionId=`#${sectionText}`
+    $('section').addClass('d-none')
+    $(sectionId).removeClass('d-none')
+    switch (sectionId) {
+
+    case '#categories': displayCateList()
+            
+            break;
+    case '#area': displayAreaList()
+            
+            break;
+    case '#ingredients': displayIngList()
+            
+            break;
+        default:
+            break;
+    }
+})
